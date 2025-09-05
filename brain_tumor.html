@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Tumor</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+  <style>
+    model-viewer {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 8px;
+      border-radius: 8px;
+      border: 2px solid rgb(176, 159, 255);
+  }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('sas.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      overflow: auto;
+      height: auto;
+    }
+    header {
+      background-color: black;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the content horizontally */
+    }
+    .logo {
+      height: 70px;
+      width: 250px;
+      margin-right: 20px; /* Move the logo to the right side */
+      /* Add a cool hover effect */
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    nav {
+      font-size: 20px;
+      font-family: 'Merriweather', serif;
+      color: rgb(176, 159, 255);
+    }
+    nav a {
+      color: inherit;
+      text-decoration: none;
+      margin: 0 70px;
+    }
+    nav a.chat-bot {
+      position: relative;
+      /* Add a cool hover effect */
+      transition: color 0.2s, transform 0.2s;
+    }
+    nav a.chat-bot::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: rgb(176, 159, 255);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    nav a.chat-bot:hover {
+      color: white;
+      transform: translateY(-2px);
+    }
+    nav a.chat-bot:hover::after {
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      overflow: auto;
+    }
+    .box {
+      width: calc(25% - 40px);
+      margin: 8px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 35px;
+      text-align: center;
+      border-radius: 10px;
+      border: 2px solid rgb(176, 159, 255);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, border-color 0.2s;
+      overflow: auto;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+      border-color: white; 
+    }
+    .box h2 {
+      color: rgb(176, 159, 255);
+      margin-bottom: 10px;
+    }
+    .box a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+    }
+    .box a:nth-child(2) {
+      margin-top: 5px; /* Add margin for spacing */
+    }
+    footer {
+      background-color: black;
+      color: rgb(176, 159, 255);
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" style="height: 90%; width: 60%;">
+    </div>
+    <h1>Health Forecast</h1> <!-- Centered heading -->
+    <nav>
+      <!-- <a href="#">Home</a>
+      <a href="diabetes.html">Epilepsy Seizures</a>
+      <a href="#">Parkinson</a>
+      <a href="#">Migraine</a>
+      <a href="#">Alzheimer</a>
+      <a href="#">Sleep Disorders</a>
+      <a href="#">ADHD</a> -->
+
+      <a href="https://docs.google.com/presentation/d/1kvGuNYmbMWtwGME7sNpLq9EYlmq3S4tSm2O-p7wfXcU/edit#slide=id.p" class="chat-bot">Chat Bot</a>
+    </nav>
+  </header>
+  <main>
+    <model-viewer src = "models/segmentation_of_brain_tumor.glb" camera-controls auto-rotate  ar  camera-orbit="0deg 75deg 120%" ></model-viewer>
+
+    <div class="box">
+      <h2>Brain Tumor</h2>
+      A brain tumor is an abnormal growth of cells in the brain or the central spinal canal. These tumors can be benign (non-cancerous) or malignant (cancerous). While benign tumors do not spread to other parts of the body, they can still cause serious health issues by pressing on surrounding brain tissues. Malignant tumors, on the other hand, can invade nearby tissues and spread to other parts of the body through the bloodstream and lymphatic system.
+    </div>
+
+   
+  </main>
+  <footer>
+    <p>&copy; Copyright © 2023 ||  Ankit Kumar Singh</p>
+  </footer>
+</body>
+</html>

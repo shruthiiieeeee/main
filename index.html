@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Information</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('sas.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: black;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Center the content horizontally */
+    }
+    .logo {
+      height: 70px;
+      width: 250px;
+      margin-right: 20px; /* Move the logo to the right side */
+      /* Add a cool hover effect */
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    nav {
+      font-size: 20px;
+      font-family: 'Merriweather', serif;
+      color: rgb(176, 159, 255);
+    }
+    nav a {
+      color: inherit;
+      text-decoration: none;
+      margin: 0 70px;
+    }
+    nav a.chat-bot {
+      position: relative;
+      /* Add a cool hover effect */
+      transition: color 0.2s, transform 0.2s;
+    }
+    nav a.chat-bot::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: rgb(176, 159, 255);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    nav a.chat-bot:hover {
+      color: white;
+      transform: translateY(-2px);
+    }
+    nav a.chat-bot:hover::after {
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .box {
+      width: calc(25% - 40px);
+      margin: 8px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 35px;
+      text-align: center;
+      border-radius: 10px;
+      border: 2px solid rgb(176, 159, 255);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+      border-color: white; 
+    }
+    .box h2 {
+      color: rgb(176, 159, 255);
+      margin-bottom: 10px;
+    }
+    .box a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+    }
+    .box a:nth-child(2) {
+      margin-top: 5px; /* Add margin for spacing */
+    }
+    footer {
+      background-color: black;
+      color: rgb(176, 159, 255);
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" style="height: 90%; width: 60%;">
+    </div>
+    <h1>Health Forecast</h1> <!-- Centered heading -->
+    <nav>
+      <!-- <a href="#">Home</a>
+      <a href="diabetes.html">Epilepsy Seizures</a>
+      <a href="#">Parkinson</a>
+      <a href="#">Migraine</a>
+      <a href="#">Alzheimer</a>
+      <a href="#">Sleep Disorders</a>
+      <a href="#">ADHD</a> -->
+
+      <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=ankitkumarsingh.twelve@gmail.com" class="chat-bot">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="box">
+      <h2>Brain Tumor</h2>
+      <a href="https://hash-it-out-braintumour.streamlit.app/">Predict!</a> <!-- Added another link -->
+      <a href="brain_tumor.html">Learn more</a> <!-- Added another link -->
+    </div>
+    <div class="box">
+      <h2>Heart Disease</h2>
+      <a href="https://hash-it-out-heart-disease.streamlit.app/">Predict!</a> <!-- Added another link -->
+      <a href="heart_disease.html">Learn more</a> <!-- Added another link -->
+    </div>
+    <div class="box">
+      <h2>Diabetics</h2>
+      <a href="https://hash-it-out-diabetes.streamlit.app/">Predict!</a> <!-- Added another link -->
+      <a href="diabetes.html">learn more</a> <!-- Added another link -->
+    </div>
+    <div class="box">
+      <h2>Lung Disease</h2>
+      <a href="https://hash-it-out-lungcancer.streamlit.app/">Predict!</a> <!-- Added another link -->
+      <a href="lung_disease.html">learn more</a> <!-- Added another link -->
+    </div>
+    <div class="box">
+      <h2>Chest x-ray</h2>
+      <a href="https://hash-it-out-chest-xray.streamlit.app/">Predict!</a> <!-- Added another link -->
+      <a href="chest_xray.html">learn more</a> <!-- Added another link -->
+    </div>
+    
+   
+  </main>
+  <footer>
+    <p>&copy; Copyright © 2025 || Sruthi Singh </p>
+  </footer>
+
+  <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "65200d300ca1670007a27917";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+<!-- End of ChatBot code -->
+</body>
+</html>
